@@ -1,4 +1,9 @@
 # bbids
-BBIDS project for thesis.
+Continuation of Daniel Laufenberg's BBIDS project for his thesis (https://github.com/delerak/bbids).
 
-Replace /fabric-samples/fabcar with this /fabcar and load blockchain from there to see IDS rules.
+Contributors include:
+  Michael Handlin
+  Arunima Choudhary
+
+With special thanks to 
+  Dr. Lei Li
