@@ -1,4 +1,4 @@
-#!/bin/bash
+﻿#!/bin/bash
 #
 # Copyright IBM Corp All Rights Reserved
 #
@@ -14,13 +14,13 @@ CC_SRC_LANGUAGE=${1:-"go"}
 CC_SRC_LANGUAGE=`echo "$CC_SRC_LANGUAGE" | tr [:upper:] [:lower:]`
 if [ "$CC_SRC_LANGUAGE" = "go" -o "$CC_SRC_LANGUAGE" = "golang"  ]; then
 	CC_RUNTIME_LANGUAGE=golang
-	CC_SRC_PATH=github.com/fabcar/go
+	CC_SRC_PATH=/fabcar/go
 elif [ "$CC_SRC_LANGUAGE" = "javascript" ]; then
 	CC_RUNTIME_LANGUAGE=node # chaincode runtime language is node.js
 	CC_SRC_PATH=/opt/gopath/src/github.com/fabcar/javascript
 elif [ "$CC_SRC_LANGUAGE" = "typescript" ]; then
 	CC_RUNTIME_LANGUAGE=node # chaincode runtime language is node.js
-	CC_SRC_PATH=/opt/gopath/src/github.com/fabcar/typescript
+	CC_SRC_PATH=/opt/gopath/src/fabcar/typescript
 	echo Compiling TypeScript code into JavaScript ...
 	pushd ../chaincode/fabcar/typescript
 	npm install
